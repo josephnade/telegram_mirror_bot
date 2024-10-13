@@ -21,7 +21,7 @@ Bu proje, Golang kullanılarak geliştirilmiş basit bir Telegram botudur. Bu bo
 
    - Projeyi klonlayın:
      ```bash
-     git clone https://github.com/kullanici-adi/telegram-bot.git
+     git clone https://github.com/josephnade/telegram-mirror_bot.git
      cd telegram-bot
      ```
    - Gerekli bağımlılıkları yükleyin:

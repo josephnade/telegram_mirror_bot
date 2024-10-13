@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
@@ -27,7 +28,7 @@ func main() {
 
 		log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
 
-		responseMessage := "Merhaba, mesajınızı aldım!"
+		responseMessage := fmt.Sprintf("Merhaba, mesajınızı aldım! '%s'", update.Message.Text)
 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, responseMessage)
 
 		if _, err := bot.Send(msg); err != nil {
